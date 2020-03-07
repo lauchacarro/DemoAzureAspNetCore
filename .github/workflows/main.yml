@@ -23,6 +23,6 @@ jobs:
     - name: 'Run Azure webapp deploy action using publish profile credentials'
       uses: azure/webapps-deploy@v1
       with: 
-        app-name: DemoAzureAspNetCore # Replace with your app name
+        app-name: 070320201207 # Replace with your app name
         publish-profile: ${{ secrets.azureWebAppPublishProfile }} # Define secret variable in repository settings as per action documentation
         package: ${{env.DOTNET_ROOT}}/myapp
