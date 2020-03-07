@@ -11,7 +11,7 @@ jobs:
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 3.0.100 # Replace with specific dotnet core version
+        dotnet-version: 3.1.102 # Replace with specific dotnet core version
      
 
     
@@ -24,6 +24,6 @@ jobs:
     - name: 'Run Azure webapp deploy action using publish profile credentials'
       uses: azure/webapps-deploy@v2
       with: 
-        app-name: amoaminovia # Replace with your app name
+        app-name: 070320201923 # Replace with your app name
         publish-profile: ${{ secrets.azureWebAppPublishProfile }} # Define secret variable in repository settings as per action documentation
         package: ${{env.DOTNET_ROOT}}/myapp
